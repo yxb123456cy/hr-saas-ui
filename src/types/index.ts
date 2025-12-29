@@ -40,3 +40,8 @@ export interface ResetPasswordFormData {
 // LoginView视图类型;
 // Enum for current view mode in Login page
 export type LoginViewMode = 'login' | 'register' | 'forgot-password'
+
+export * from './company'
+export * from './config'
+export * from './recruit'
+export * from './role'
