@@ -1,0 +1,77 @@
+:root {
+  --md-ref-palette-primary-40: #006c4c;
+  --md-ref-palette-primary-50: #008960;
+
+  --md-ref-palette-primary-60: #00a676;
+  --md-ref-palette-primary-70: #00c48c;
+  --md-ref-palette-primary-80: #33e3a4;
+  --md-ref-palette-primary-90: #66f0bf;
+  --md-ref-palette-primary-95: #bffff0;
+  --md-ref-palette-primary-99: #f2ffff;
+
+  --md-ref-palette-secondary-50: #4c6358;
+  --md-ref-palette-neutral-10: #191c1a;
+  --md-ref-palette-neutral-90: #e1e3df;
+  --md-ref-palette-neutral-95: #eff1ed;
+  --md-ref-palette-neutral-99: #fbfdf9;
+
+  /* --- Sys Colors (Light Theme) --- */
+  --color-primary: var(--md-ref-palette-primary-50);
+  --color-on-primary: #ffffff;
+  --color-primary-container: var(--md-ref-palette-primary-95);
+  --color-on-primary-container: var(--md-ref-palette-primary-40);
+
+  --color-background: var(--md-ref-palette-neutral-99);
+  --color-on-background: var(--md-ref-palette-neutral-10);
+
+  --color-surface: #ffffff;
+  --color-on-surface: var(--md-ref-palette-neutral-10);
+  --color-surface-variant: var(--md-ref-palette-neutral-90);
+  --color-on-surface-variant: #404944;
+
+  --color-outline: #707974;
+  --color-outline-variant: #bfc9c2;
+
+  /* --- Typography --- */
+  --font-family-sans:
+    'Roboto', 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei',
+    Arial, sans-serif;
+  --font-family-mono: 'Fira Code', 'Roboto Mono', monospace;
+
+  /* --- Elevation / Shadows --- */
+  --elevation-1: 0 1px 2px rgba(0, 0, 0, 0.08), 0 1px 3px 1px rgba(0, 0, 0, 0.05);
+  --elevation-2: 0 1px 2px rgba(0, 0, 0, 0.08), 0 2px 6px 2px rgba(0, 0, 0, 0.05);
+  --elevation-3: 0 4px 8px 3px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
+  --elevation-4: 0 6px 10px 4px rgba(0, 0, 0, 0.05), 0 2px 3px rgba(0, 0, 0, 0.1);
+
+  /* --- Shape --- */
+  --radius-small: 4px;
+  --radius-medium: 8px;
+  --radius-large: 16px;
+  --radius-full: 9999px;
+
+  /* --- Layout --- */
+  --header-height: 64px;
+  --sidebar-width: 260px;
+}
+
+/* Dark Theme Support */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-primary: var(--md-ref-palette-primary-80);
+    --color-on-primary: #003825;
+    --color-primary-container: var(--md-ref-palette-primary-40);
+    --color-on-primary-container: var(--md-ref-palette-primary-95);
+
+    --color-background: #191c1a;
+    --color-on-background: #e1e3df;
+
+    --color-surface: #1c201e;
+    --color-on-surface: #e1e3df;
+    --color-surface-variant: #404944;
+    --color-on-surface-variant: #bfc9c2;
+
+    --color-outline: #8a938d;
+    --color-outline-variant: #404944;
+  }
+}
